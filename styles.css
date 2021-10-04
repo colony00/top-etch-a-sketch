@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5vh;
+}
+
+#container {
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(16, auto);
+}
+
+.pixel {
+  background-color: brown;
+  text-align: center;
+}
+
+.pixel.hover {
+  background-color: blueviolet;
+}
+
+button {
+  margin-top: 5vh;
+}
