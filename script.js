@@ -24,11 +24,10 @@ button.addEventListener("click", () => {
   for(let i = 0;i<pixels.length;i++) {
     pixels[i].classList.remove("hover")
   }
-  let notNumber = true;
   do {
     gridSize = Number(prompt("How big a size grid do you want? Max 100"))
   }
-  while(isNaN(gridSize));
+  while(isNaN(gridSize) || gridSize>100);
   removeChilds(container)
   pixels = []
   createPixels(gridSize*gridSize,pixels)
